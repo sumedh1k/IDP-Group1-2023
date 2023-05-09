@@ -1,33 +1,35 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float speed = 10.4f;
+    private float playerSpeed = 5.0f;
 
-    // Update is called once per frame
-    void Update()
+    private Rigidbody2D _playerRigidbody;
+    private void Start()
     {
-        Vector3 pos = transform.position;
-
-        if (Input.GetKey("w"))
+        _playerRigidbody = GetComponent<Rigidbody2D>();
+        if (_playerRigidbody == null)
         {
-            pos.y += speed * Time.deltaTime;
+            Debug.LogError("Player is missing a Rigidbody2D component");
         }
-        if (Input.GetKey("s"))
-        {
-            pos.y -= speed * Time.deltaTime;
-        }
-        if (Input.GetKey("d"))
-        {
-            pos.x += speed * Time.deltaTime;
-        }
-        if (Input.GetKey("a"))
-        {
-            pos.x -= speed * Time.deltaTime;
-        }
-
-        transform.position = pos;
     }
+    private void Update()
+    {
+        MovePlayer();
+
+    }
+    private void MovePlayer()
+    {
+        var horizontalInput = Input.GetAxisRaw("Horizontal");
+        var verticalInput = Input.GetAxisRaw("Vertical");
+
+        _playerRigidbody.velocity = new Vector2(horizontalInput * playerSpeed, verticalInput * playerSpeed);
+    }
+       
+        
+
+
 }
