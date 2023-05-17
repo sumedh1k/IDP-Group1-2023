@@ -2,15 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ShelfTrigger : MonoBehaviour
+public class ElectricalTrigger : MonoBehaviour
 {
-    public GameObject obj;
-    public GameObject ZooButton;
-    public GameObject ZooBookSide;
-    public GameObject Set1;
-    public GameObject Set2;
-    public GameObject Set3;
-    public GameObject NextPage;
+    public GameObject ElectricalPanel;
+    public GameObject RedButton;
+    public GameObject BlueButton;
+    public GameObject YellowButton;
+    public GameObject GreenButton;
+
 
     protected bool runTrigger = false;
     protected bool isActive = false;
@@ -33,22 +32,22 @@ public class ShelfTrigger : MonoBehaviour
 
     protected void OnTriggerExit2D(Collider2D other)
     {
-        obj.SetActive(false);
+        ElectricalPanel.SetActive(false);
+        RedButton.SetActive(false);
+        BlueButton.SetActive(false);
+        YellowButton.SetActive(false);
+        GreenButton.SetActive(false);
         isActive = false;
         runTrigger = false;
-        Set1.SetActive(false);
-        Set2.SetActive(false);
-        Set3.SetActive(false);
-        ZooBookSide.SetActive(false);
-        NextPage.SetActive(false);
     }
 
     protected virtual void toRun()
     {
-        obj.SetActive(!isActive); // false to hide, true to show
-        ZooButton.SetActive(!isActive);
-        ZooBookSide.SetActive(!isActive);
-        Debug.Log("Opened");
+        ElectricalPanel.SetActive(!isActive); // false to hide, true to show
+        RedButton.SetActive(!isActive);
+        BlueButton.SetActive(!isActive);
+        YellowButton.SetActive(!isActive);
+        GreenButton.SetActive(!isActive);
         isActive = !isActive;
     }
 }

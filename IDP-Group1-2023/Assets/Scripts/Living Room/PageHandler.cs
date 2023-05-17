@@ -27,26 +27,6 @@ public class PageHandler : MonoBehaviour
        
     }
 
-    public void PrevPage()
-    {
-        if (Set2.activeSelf)
-        {
-            Set1.SetActive(true);
-            Set2.SetActive(false);
-            Set3.SetActive(false);
-            Debug.Log("Set 1 Active");
-            Debug.Log("Set 2 Inactive");
-        }
-        else if (Set3.activeSelf)
-        {
-            Set2.SetActive(true);
-            Set3.SetActive(false);
-            Set1.SetActive(false);
-            Debug.Log("Set 2 Active");
-            Debug.Log("Set 3 Inactive");
-        }
-
-    }
-
+ 
 }
 
