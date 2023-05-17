@@ -5,16 +5,12 @@ using UnityEngine;
 public class ZooButton : MonoBehaviour
 {
     public GameObject Set1;
-  
 
-    // Update is called once per frame
     public void OpenZooBook()
     {
-        if (GameObject.Find("Books") != null)
+        if (Set1 != null)
         {
-            Set1.SetActive(true);
-            NextPage.SetActive(true);
-            BackPage.SetActive(true);
+            Set1.SetActive(false);
         }
     }
 }
