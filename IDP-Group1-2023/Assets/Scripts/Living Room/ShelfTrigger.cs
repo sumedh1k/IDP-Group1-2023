@@ -7,6 +7,7 @@ public class ShelfTrigger : MonoBehaviour
     public GameObject obj;
     public GameObject ZooButton;
     public GameObject ZooBookSide;
+    public GameObject Set1;
 
     protected bool runTrigger = false;
     protected bool isActive = false;
@@ -32,6 +33,8 @@ public class ShelfTrigger : MonoBehaviour
         obj.SetActive(false);
         isActive = false;
         runTrigger = false;
+        Set1.SetActive(false);
+        ZooBookSide.SetActive(false);
     }
 
     protected virtual void toRun()
@@ -39,7 +42,7 @@ public class ShelfTrigger : MonoBehaviour
         obj.SetActive(!isActive); // false to hide, true to show
         ZooButton.SetActive(!isActive);
         ZooBookSide.SetActive(!isActive);
-
+        Debug.Log("Opened");
         isActive = !isActive;
     }
 }

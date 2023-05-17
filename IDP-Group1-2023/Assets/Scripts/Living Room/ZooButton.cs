@@ -8,9 +8,13 @@ public class ZooButton : MonoBehaviour
 
     public void OpenZooBook()
     {
+
+        Debug.Log("Clicked");
+
         if (Set1 != null)
         {
-            Set1.SetActive(false);
+            Set1.SetActive(true);
         }
+
     }
 }
