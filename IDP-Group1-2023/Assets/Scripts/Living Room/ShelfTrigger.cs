@@ -8,6 +8,8 @@ public class ShelfTrigger : MonoBehaviour
     public GameObject ZooButton;
     public GameObject ZooBookSide;
     public GameObject Set1;
+    public GameObject Set2;
+    public GameObject Set3;
 
     protected bool runTrigger = false;
     protected bool isActive = false;
@@ -34,6 +36,8 @@ public class ShelfTrigger : MonoBehaviour
         isActive = false;
         runTrigger = false;
         Set1.SetActive(false);
+        Set2.SetActive(false);
+        Set3.SetActive(false);
         ZooBookSide.SetActive(false);
     }
 
