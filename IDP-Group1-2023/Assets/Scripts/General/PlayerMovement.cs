@@ -5,13 +5,26 @@ using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
-    private float playerSpeed = 5.0f;
+    public float moveSpeed;
 
-    private Rigidbody2D _playerRigidbody;
+    public Animator anim;
+
+    private float x;
+    private float y;
+    private bool moving;
+    private Vector2 input;
+
+    private Rigidbody2D rb;
+
+    private void FixedUpdate()
+    {
+        rb.velocity = input * moveSpeed;
+    }
+
     private void Start()
     {
-        _playerRigidbody = GetComponent<Rigidbody2D>();
-        if (_playerRigidbody == null)
+        rb = GetComponent<Rigidbody2D>();
+        if (rb == null)
         {
             Debug.LogError("Player is missing a Rigidbody2D component");
         }
@@ -19,17 +32,38 @@ public class PlayerMovement : MonoBehaviour
     private void Update()
     {
         MovePlayer();
+        Animate();
 
     }
     private void MovePlayer()
     {
-        var horizontalInput = Input.GetAxisRaw("Horizontal");
-        var verticalInput = Input.GetAxisRaw("Vertical");
+        x = Input.GetAxisRaw("Horizontal");
+        y = Input.GetAxisRaw("Vertical");
 
-        _playerRigidbody.velocity = new Vector2(horizontalInput * playerSpeed, verticalInput * playerSpeed);
+        input = new Vector2(x, y);
+        input.Normalize();
+
     }
-       
-        
+
+    private void Animate()
+    {
+        if (input.magnitude > 0.1f || input.magnitude < -0.1f)
+        {
+            moving = true;
+        }
+        else
+        {
+            moving = false;
+        }
+
+        if (moving)
+        {
+            anim.SetFloat("X", x);
+            anim.SetFloat("Y", y);
+        }
+
+        anim.SetBool("Moving", moving);
+    }
 
 
 }

@@ -41,6 +41,7 @@ public class ShelfTrigger : MonoBehaviour
         Set3.SetActive(false);
         ZooBookSide.SetActive(false);
         NextPage.SetActive(false);
+        ZooButton.SetActive(false);
     }
 
     protected virtual void toRun()
