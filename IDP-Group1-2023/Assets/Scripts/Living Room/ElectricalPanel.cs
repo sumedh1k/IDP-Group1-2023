@@ -8,8 +8,14 @@ public class ElectricalPanel : MonoBehaviour
     public GameObject BlueButton;
     public GameObject GreenButton;
     public GameObject YellowButton;
+    public GameObject Spotlight;
+    public GameObject Diffuser;
+    public GameObject RoomBackground;
+    public GameObject Couch;
+    public GameObject Painting;
+    public GameObject Table;
+    public GameObject Bookshelf;
 
-    public GameObject ProperSequence; //change to fuse object
     int correctClicked = 0;
     int[] sequence = {4, 3, 1, 1, 3 };
 
@@ -28,11 +34,17 @@ public class ElectricalPanel : MonoBehaviour
         }
         if (correctClicked == 5)
         {
-            ProperSequence.SetActive(true);
             RedButton.SetActive(false);
             BlueButton.SetActive(false);
             GreenButton.SetActive(false);
             YellowButton.SetActive(false);
+            Spotlight.SetActive(false);
+            Diffuser.SetActive(false);
+            RoomBackground.SetActive(false);
+            Couch.SetActive(false);
+            Painting.SetActive(false);
+            Table.SetActive(false);
+            Bookshelf.SetActive(false);
             
         }
     }
