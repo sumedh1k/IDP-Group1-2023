@@ -11,6 +11,8 @@ public class ShelfTrigger : MonoBehaviour
     public GameObject Set2;
     public GameObject Set3;
     public GameObject NextPage;
+    public GameObject CipherBook;
+    public GameObject CipherBookSide;
 
     protected bool runTrigger = false;
     protected bool isActive = false;
@@ -40,6 +42,7 @@ public class ShelfTrigger : MonoBehaviour
         Set2.SetActive(false);
         Set3.SetActive(false);
         ZooBookSide.SetActive(false);
+        CipherBookSide.SetActive(false);
         NextPage.SetActive(false);
         ZooButton.SetActive(false);
     }
@@ -49,6 +52,8 @@ public class ShelfTrigger : MonoBehaviour
         obj.SetActive(!isActive); // false to hide, true to show
         ZooButton.SetActive(!isActive);
         ZooBookSide.SetActive(!isActive);
+        CipherBookSide.SetActive(!isActive);
+        CipherBook.SetActive(!isActive);
         Debug.Log("Opened");
         isActive = !isActive;
     }

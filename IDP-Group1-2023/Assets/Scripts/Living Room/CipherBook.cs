@@ -4,18 +4,19 @@ using UnityEngine;
 
 public class CipherBook : MonoBehaviour
 {
+    public GameObject CipherBookObject;
+    public GameObject CipherBookSide;
 
-    public GameObject CypherBook;
-
-    public void SetActive()
+    public void OpenCipherBook()
     {
-        if (CypherBook != null) 
-        { 
-            CypherBook.SetActive(false);
-            Debug.Log("buttonclicked");
 
+        Debug.Log("Clicked");
+
+        if (CipherBookSide != null)
+        {
+            CipherBookObject.SetActive(false);
+            CipherBookSide.SetActive(false);
         }
 
     }
-    
 }
