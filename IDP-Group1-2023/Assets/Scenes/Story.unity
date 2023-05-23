@@ -517,7 +517,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8ac2643220f820449714c1085a266ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  typewriterSpeed: 35
+  typewriterSpeed: 20
 --- !u!1 &1996570624
 GameObject:
   m_ObjectHideFlags: 0

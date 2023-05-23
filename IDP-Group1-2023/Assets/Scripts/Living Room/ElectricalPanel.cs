@@ -15,6 +15,7 @@ public class ElectricalPanel : MonoBehaviour
     public GameObject Painting;
     public GameObject Table;
     public GameObject Bookshelf;
+    public GameObject LemonTrigger;
 
     int correctClicked = 0;
     int[] sequence = {4, 3, 1, 1, 3 };
@@ -45,7 +46,7 @@ public class ElectricalPanel : MonoBehaviour
             Painting.SetActive(false);
             Table.SetActive(false);
             Bookshelf.SetActive(false);
-            
+            LemonTrigger.SetActive(true);  
         }
     }
 }

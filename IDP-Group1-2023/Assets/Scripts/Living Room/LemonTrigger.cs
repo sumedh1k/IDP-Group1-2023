@@ -2,13 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ElectricalTrigger : MonoBehaviour
+public class LemonTrigger : MonoBehaviour
 {
-    public GameObject ElectricalPanel;
-    public GameObject RedButton;
-    public GameObject BlueButton;
-    public GameObject YellowButton;
-    public GameObject GreenButton;
+    public GameObject LemonTable;
+    public GameObject NoLemonTable;
+    public GameObject DarkLemonTable;
+    public GameObject LemonIcon;
 
     protected bool runTrigger = false;
     protected bool isActive = false;
@@ -31,22 +30,16 @@ public class ElectricalTrigger : MonoBehaviour
 
     protected void OnTriggerExit2D(Collider2D other)
     {
-        ElectricalPanel.SetActive(false);
-        RedButton.SetActive(false);
-        BlueButton.SetActive(false);
-        YellowButton.SetActive(false);
-        GreenButton.SetActive(false);
         isActive = false;
         runTrigger = false;
     }
 
     protected virtual void toRun()
     {
-        ElectricalPanel.SetActive(!isActive); // false to hide, true to show
-        RedButton.SetActive(!isActive);
-        BlueButton.SetActive(!isActive);
-        YellowButton.SetActive(!isActive);
-        GreenButton.SetActive(!isActive);
+        LemonTable.SetActive(false);
+        DarkLemonTable.SetActive(false);
+        NoLemonTable.SetActive(true);
+        LemonIcon.SetActive(true);
         isActive = !isActive;
     }
 }
