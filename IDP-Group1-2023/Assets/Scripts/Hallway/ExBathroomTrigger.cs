@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BathroomTrigger : MonoBehaviour
+public class ExBathroomTrigger : MonoBehaviour
 {
     public GameObject Bathroom;
     public GameObject Hallway;
@@ -28,16 +28,14 @@ public class BathroomTrigger : MonoBehaviour
 
     protected void OnTriggerExit2D(Collider2D other)
     {
-        Bathroom.SetActive(false);
-        Hallway.SetActive(false);
         isActive = false;
         runTrigger = false;
     }
 
     protected virtual void toRun()
     {
-        Bathroom.SetActive(true); 
-        Hallway.SetActive(false);
+        Bathroom.SetActive(false);
+        Hallway.SetActive(!isActive);
         isActive = !isActive;
     }
 }
