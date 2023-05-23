@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BedroomTrigger : MonoBehaviour
+public class ExBedroomTrigger : MonoBehaviour
 {
     public GameObject Bedroom;
     public GameObject Hallway;
@@ -34,8 +34,8 @@ public class BedroomTrigger : MonoBehaviour
 
     protected virtual void toRun()
     {
-        Bedroom.SetActive(true);
-        Hallway.SetActive(false);
+        Bedroom.SetActive(false);
+        Hallway.SetActive(true);
         isActive = !isActive;
     }
 }
