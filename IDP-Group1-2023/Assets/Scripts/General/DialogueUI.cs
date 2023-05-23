@@ -7,6 +7,6 @@ public class DialogueUI : MonoBehaviour
 
     private void Start()
     {
-        GetComponent<TypewriterEffect>().Run("This is a bit of text! \nHello.", textLabel);
+        GetComponent<TypewriterEffect>().Run("Wh-where am I? I was just playing with the dollhouse a few seconds ago.", textLabel);
     }
 }
