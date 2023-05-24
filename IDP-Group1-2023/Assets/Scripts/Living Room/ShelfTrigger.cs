@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class ShelfTrigger : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class ShelfTrigger : MonoBehaviour
     public GameObject NextPage;
     public GameObject CipherBook;
     public GameObject CipherBookSide;
+
 
     protected bool runTrigger = false;
     protected bool isActive = false;
@@ -58,3 +60,7 @@ public class ShelfTrigger : MonoBehaviour
         isActive = !isActive;
     }
 }
+
+
+
+
