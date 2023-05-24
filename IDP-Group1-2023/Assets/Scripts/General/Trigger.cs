@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Diagnostics;
 
 public class Trigger : MonoBehaviour
 {
     public GameObject obj;
+    public GameObject OpenCipherBook;
 
     protected bool runTrigger = false;
     protected bool isActive = false;
@@ -16,6 +18,10 @@ public class Trigger : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.F) || Input.GetKeyDown(KeyCode.Space))
             {
                 toRun();
+            }
+            else if (Input.GetKeyDown("1") || Input.GetKeyDown(KeyCode.Space))
+            {
+                openBook();
             }
         }
     }
@@ -35,6 +41,12 @@ public class Trigger : MonoBehaviour
     protected virtual void toRun()
     {
         obj.SetActive(!isActive); // false to hide, true to show
+        isActive = !isActive;
+    }
+
+    protected virtual void openBook()
+    {
+        OpenCipherBook.SetActive(!isActive);
         isActive = !isActive;
     }
 }
