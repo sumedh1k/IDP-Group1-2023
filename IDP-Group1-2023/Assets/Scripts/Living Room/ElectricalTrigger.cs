@@ -9,6 +9,7 @@ public class ElectricalTrigger : MonoBehaviour
     public GameObject BlueButton;
     public GameObject YellowButton;
     public GameObject GreenButton;
+    public GameObject BookshelfInteraction;
 
     protected bool runTrigger = false;
     protected bool isActive = false;
@@ -32,6 +33,7 @@ public class ElectricalTrigger : MonoBehaviour
     protected void OnTriggerExit2D(Collider2D other)
     {
         ElectricalPanel.SetActive(false);
+        BookshelfInteraction.SetActive(true);
         RedButton.SetActive(false);
         BlueButton.SetActive(false);
         YellowButton.SetActive(false);
@@ -45,6 +47,7 @@ public class ElectricalTrigger : MonoBehaviour
         ElectricalPanel.SetActive(!isActive); // false to hide, true to show
         RedButton.SetActive(!isActive);
         BlueButton.SetActive(!isActive);
+        BookshelfInteraction.SetActive(false);
         YellowButton.SetActive(!isActive);
         GreenButton.SetActive(!isActive);
         isActive = !isActive;

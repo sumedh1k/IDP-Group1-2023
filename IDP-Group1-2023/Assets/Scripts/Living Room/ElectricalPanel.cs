@@ -8,6 +8,7 @@ public class ElectricalPanel : MonoBehaviour
     public GameObject BlueButton;
     public GameObject GreenButton;
     public GameObject YellowButton;
+    public GameObject BookshelfInteraction;
     public GameObject Spotlight;
     public GameObject Diffuser;
     public GameObject RoomBackground;
