@@ -19,10 +19,6 @@ public class Trigger : MonoBehaviour
             {
                 toRun();
             }
-            else if (Input.GetKeyDown("1") || Input.GetKeyDown(KeyCode.Space))
-            {
-                openBook();
-            }
         }
     }
 
