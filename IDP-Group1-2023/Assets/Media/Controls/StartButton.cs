@@ -19,7 +19,7 @@ public class StartButton : MonoBehaviour
 
     public void GameplaySceneChange()
     {
-        SceneManager.LoadScene("Gameplay");
+        SceneManager.LoadScene("Story");
     }
     public void LeaderboardSceneChange()
     {
@@ -28,10 +28,6 @@ public class StartButton : MonoBehaviour
     public void ControlsSceneChange()
     {
         SceneManager.LoadScene("Controls");
-    }
-    public void ControlsToMainMenuSceneChange()
-    {
-        SceneManager.LoadScene("MainMenu");
     }
 }
 
