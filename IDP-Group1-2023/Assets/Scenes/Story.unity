@@ -873,7 +873,8 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
+  selectedBlocks:
+  - {fileID: 1465463423}
   selectedCommands: []
   variables: []
   description: 
@@ -984,8 +985,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 1
   indentLevel: 0
-  storyText: Two weeks ago a dear aunt of Daisy's passed away. As the family was
-    clearing out her attic, they found an antique dollhouse covered in dust.
+  storyText: Two weeks ago a dear aunt passed away. As the family was clearing out
+    her attic, they found an antique dollhouse covered in dust.
   description: 
   character: {fileID: 2032196300}
   portrait: {fileID: 0}
@@ -1168,7 +1169,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 11
   indentLevel: 0
-  storyText: "Although they didn\u2019t know at the time, this dollhouse was cursed.
+  storyText: "Although we didn\u2019t know at the time, this dollhouse was cursed.
     Any child who played with it would be trapped inside, becoming a doll. "
   description: 
   character: {fileID: 2032196300}
@@ -1197,8 +1198,7 @@ MonoBehaviour:
   itemId: 13
   indentLevel: 0
   storyText: Nobody had expected the dollhouse to be the reason these people were
-    missing, so no one had ever caught on to the curse except for Daisy's ever vigilant
-    aunt.
+    missing, so no human had ever caught on to the curse except for my aunt.
   description: 
   character: {fileID: 2032196300}
   portrait: {fileID: 0}
@@ -1243,8 +1243,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 15
   indentLevel: 0
-  storyText: "Because of that, it ended up in Daisy's aunt\u2019s attic to keep it
-    away from future generations."
+  storyText: "Because of that, it ended up in my aunt\u2019s attic to keep away from
+    future generations."
   description: 
   character: {fileID: 2032196300}
   portrait: {fileID: 0}
@@ -1334,9 +1334,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 16
   indentLevel: 0
-  storyText: As Daisy's family and her grieved over the tragic event, an idea came
-    to Daisy's mom. Unknowing about the curse, she decided to give the dollhouse
-    to Daisy as a way to keep the memory of her aunt alive.
+  storyText: As my family and I grieved over the tragic event, an idea came to my
+    mom. She decided to give the dollhouse to me as a way to keep the memory of my
+    aunt alive.
   description: 
   character: {fileID: 2032196300}
   portrait: {fileID: 0}
@@ -1363,8 +1363,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 24
   indentLevel: 0
-  storyText: But one day, she reluctantly opened the side of the house to reveal
-    the interior of the dollhouse.
+  storyText: But one day, I reluctantly opened the side of the house to reveal the
+    interior of the dollhouse.
   description: 
   character: {fileID: 2032196300}
   portrait: {fileID: 0}
@@ -1409,8 +1409,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 22
   indentLevel: 0
-  storyText: For days Daisy looked at the dollhouse, only seeing it as a painful
-    reminder of the recent death of a relative.
+  storyText: For days I looked at the dollhouse, only seeing it as a painful reminder
+    of the recent death of a relative.
   description: 
   character: {fileID: 2032196300}
   portrait: {fileID: 0}
@@ -1503,8 +1503,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 28
   indentLevel: 0
-  storyText: "As soon as she touched the dollhouse she felt a funny feeling spread
-    across her body\u2026"
+  storyText: "As soon as I touched the dollhouse I felt a funny feeling spread across
+    my body\u2026"
   description: 
   character: {fileID: 2032196300}
   portrait: {fileID: 0}
