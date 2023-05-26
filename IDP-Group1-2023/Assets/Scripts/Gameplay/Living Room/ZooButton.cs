@@ -6,6 +6,7 @@ public class ZooButton : MonoBehaviour
 {
     public GameObject Set1;
     public GameObject NextPage;
+    public GameObject CloseButton;
 
     public void OpenZooBook()
     {
@@ -16,6 +17,7 @@ public class ZooButton : MonoBehaviour
         {
             Set1.SetActive(true);
             NextPage.SetActive(true);
+            CloseButton.SetActive(true);
         }
 
     }

@@ -5,8 +5,7 @@ using UnityEngine;
 public class ElevatorTrigger : MonoBehaviour
 {
     public GameObject obj;
-   /* public GameObject MainCharacter;
-    public GameObject Anna;*/
+    public GameObject SubmitButton;
 
     protected bool runTrigger = false;
     protected bool isActive = false;
@@ -30,17 +29,16 @@ public class ElevatorTrigger : MonoBehaviour
     protected void OnTriggerExit2D(Collider2D other)
     {
         obj.SetActive(false);
-/*        MainCharacter.SetActive(true);
-        Anna.SetActive(true);*/
+        SubmitButton.SetActive(false);
         isActive = false;
         runTrigger = false;
     }
 
     protected virtual void toRun()
     {
-        obj.SetActive(true); // false to hide, true to show
-      /*  MainCharacter.SetActive(false);
-        Anna.SetActive(false); */  
+        obj.SetActive(true); 
+        SubmitButton.SetActive(true);
+    
         isActive = !isActive;
     }
 }

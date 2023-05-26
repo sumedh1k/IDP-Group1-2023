@@ -8,6 +8,7 @@ public class LemonTrigger : MonoBehaviour
     public GameObject NoLemonTable;
     public GameObject DarkLemonTable;
     public GameObject LemonIcon;
+    public GameObject ElevatorTrigger;
 
     protected bool runTrigger = false;
     protected bool isActive = false;
@@ -40,6 +41,7 @@ public class LemonTrigger : MonoBehaviour
         DarkLemonTable.SetActive(false);
         NoLemonTable.SetActive(true);
         LemonIcon.SetActive(true);
+        ElevatorTrigger.SetActive(true);
         isActive = !isActive;
     }
 }
