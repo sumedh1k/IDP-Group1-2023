@@ -6946,7 +6946,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 219185866}
+  selectedFlowchart: {fileID: 915232570}
 --- !u!4 &725340763
 Transform:
   m_ObjectHideFlags: 1
@@ -8502,7 +8502,7 @@ GameObject:
   m_IsActive: 1
 --- !u!114 &915232567
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -8522,7 +8522,7 @@ MonoBehaviour:
   fadeTweenType: 4
 --- !u!114 &915232568
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -8575,7 +8575,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 0, y: 0}
+  scrollPos: {x: 444, y: 43}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -8588,8 +8588,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 915232569}
-  selectedCommands:
-  - {fileID: 915232567}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
