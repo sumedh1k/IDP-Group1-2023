@@ -29,5 +29,9 @@ public class StartButton : MonoBehaviour
     {
         SceneManager.LoadScene("Controls");
     }
+    public void ControlsToMainMenuSceneChange()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
 }
 
