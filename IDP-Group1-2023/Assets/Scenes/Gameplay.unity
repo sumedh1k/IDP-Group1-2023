@@ -4611,6 +4611,8 @@ MonoBehaviour:
   Set1: {fileID: 995306798}
   Set2: {fileID: 588452201}
   Set3: {fileID: 1993481278}
+  CloseButton1: {fileID: 0}
+  NextPage: {fileID: 0}
 --- !u!1 &372437203
 GameObject:
   m_ObjectHideFlags: 0
@@ -7039,11 +7041,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< Updated upstream
-  selectedFlowchart: {fileID: 915232570}
-=======
   selectedFlowchart: {fileID: 1597043937}
->>>>>>> Stashed changes
 --- !u!4 &725340763
 Transform:
   m_ObjectHideFlags: 1
@@ -12926,7 +12924,8 @@ GameObject:
   - component: {fileID: 1597043934}
   - component: {fileID: 1597043933}
   - component: {fileID: 1597043932}
-  - component: {fileID: 1597043931}
+  - component: {fileID: 1597043940}
+  - component: {fileID: 1597043939}
   m_Layer: 0
   m_Name: SubmitButton
   m_TagString: Untagged
@@ -12934,24 +12933,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1597043931
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1597043930}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2fab8abf0343545abbfebd9a7b7b34bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 4
-  indentLevel: 1
-  logType: 0
-  logMessage:
-    stringRef: {fileID: 0}
-    stringVal: NIGHT
 --- !u!114 &1597043932
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -13270,7 +13251,8 @@ MonoBehaviour:
   commandList:
   - {fileID: 1597043934}
   - {fileID: 1597043932}
-  - {fileID: 1597043931}
+  - {fileID: 1597043940}
+  - {fileID: 1597043939}
   suppressAllAutoSelections: 0
 --- !u!114 &1597043937
 MonoBehaviour:
@@ -13285,7 +13267,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 428.3, y: 54.90001}
+  scrollPos: {x: 420.7, y: 54.90001}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -13299,7 +13281,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1597043936}
   selectedCommands:
-  - {fileID: 1597043931}
+  - {fileID: 1597043939}
   variables:
   - {fileID: 1597043933}
   description: 
@@ -13327,6 +13309,57 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1597043939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1597043930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbd8c931f22994b9d90e2037fffaa770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 5
+  indentLevel: 1
+  _targetGameObject:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 0}
+  activeState:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  targetGameObjectOLD: {fileID: 0}
+--- !u!114 &1597043940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1597043930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c6dd8d3a780f4d1ea772e3daf10c372, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 4
+  indentLevel: 1
+  targetObjects:
+  - {fileID: 69811133}
+  tweenType: 2
+  waitUntilFinished:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  duration:
+    floatRef: {fileID: 0}
+    floatVal: 1
+  fadeMode: 1
+  targetColor:
+    colorRef: {fileID: 0}
+    colorVal: {r: 1, g: 1, b: 1, a: 0}
+  targetAlpha:
+    floatRef: {fileID: 0}
+    floatVal: 1
 --- !u!1 &1702602137
 GameObject:
   m_ObjectHideFlags: 0
