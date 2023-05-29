@@ -14,6 +14,7 @@ public class ShelfTrigger : MonoBehaviour
     public GameObject NextPage;
     public GameObject CipherBook;
     public GameObject CipherBookSide;
+    public GameObject CloseButton;
 
 
     protected bool runTrigger = false;
@@ -45,8 +46,10 @@ public class ShelfTrigger : MonoBehaviour
         Set3.SetActive(false);
         ZooBookSide.SetActive(false);
         CipherBookSide.SetActive(false);
+        CipherBook.SetActive(false);
         NextPage.SetActive(false);
         ZooButton.SetActive(false);
+        CloseButton.SetActive(false);
     }
 
     protected virtual void toRun()

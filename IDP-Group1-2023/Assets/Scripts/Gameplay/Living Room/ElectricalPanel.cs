@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Fungus;
 
 public class ElectricalPanel : MonoBehaviour
 {
@@ -19,6 +20,9 @@ public class ElectricalPanel : MonoBehaviour
     public GameObject Bookshelf;
     public GameObject LemonTrigger;
     public GameObject LemonNote;
+    public bool Set1Completed;
+    public int HintIndex;
+    public Flowchart flowchart;
 
     int correctClicked = 0;
     int[] sequence = {4, 3, 1, 1, 3 };
@@ -52,6 +56,16 @@ public class ElectricalPanel : MonoBehaviour
             Bookshelf.SetActive(false);
             LemonTrigger.SetActive(true);  
             LemonNote.SetActive(true);
+
+            if (flowchart != null)
+            {
+                flowchart.SetBooleanVariable("Set1Completed", true);
+                Debug.Log(flowchart.GetBooleanVariable("Set1Completed"));
+
+                flowchart.SetIntegerVariable("HintIndex", 4);
+                Debug.Log(flowchart.GetIntegerVariable("HintIndex"));
+                
+            }
         }
     }
 }

@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using Fungus;
 
 public class LemonDisplayOnClick : MonoBehaviour
 {
@@ -7,6 +8,9 @@ public class LemonDisplayOnClick : MonoBehaviour
     public GameObject popup2;
 
     private bool isPopupOpen;
+    public int HintIndex;
+    public bool Set2Completed;
+    public Flowchart flowchart;
 
     private void Start()
     {
@@ -26,6 +30,16 @@ public class LemonDisplayOnClick : MonoBehaviour
             OpenPopup();
             Debug.Log("Popup Open");
         }
+
+        if (flowchart != null)
+        {
+            flowchart.SetIntegerVariable("HintIndex", 8);
+            Debug.Log(flowchart.GetIntegerVariable("HintIndex"));
+
+            flowchart.SetBooleanVariable("Set2Completed", true);
+            Debug.Log(flowchart.GetBooleanVariable("Set2Completed"));
+
+        }
     }
 
     private void OpenPopup()
@@ -39,5 +53,6 @@ public class LemonDisplayOnClick : MonoBehaviour
         popup.SetActive(false);
         popup2.SetActive(false);
         isPopupOpen = false;
+
     }
 }
