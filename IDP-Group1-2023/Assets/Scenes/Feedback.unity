@@ -1329,6 +1329,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 781938741}
+        m_TargetAssemblyTypeName: LeadboardSubmit, Assembly-CSharp
+        m_MethodName: Send
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &255191500
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3516,6 +3528,7 @@ GameObject:
   m_Component:
   - component: {fileID: 781938740}
   - component: {fileID: 781938739}
+  - component: {fileID: 781938741}
   m_Layer: 0
   m_Name: ScriptRunner
   m_TagString: Untagged
@@ -3555,6 +3568,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &781938741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 781938738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bbc452045b2cd04294ee60b24532cd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Username: {fileID: 216213406}
 --- !u!1 &864814424
 GameObject:
   m_ObjectHideFlags: 0

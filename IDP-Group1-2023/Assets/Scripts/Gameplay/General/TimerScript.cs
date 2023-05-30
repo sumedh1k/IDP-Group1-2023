@@ -16,6 +16,7 @@ public class TimerScript : MonoBehaviour
         if (countdownTime > 0)
         {
             countdownTime -= Time.deltaTime;
+            PlayerPrefs.SetFloat("Time", countdownTime);
             UpdateTimerText();
         }
     }
