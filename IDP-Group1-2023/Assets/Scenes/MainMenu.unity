@@ -1230,7 +1230,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 56400026}
         m_TargetAssemblyTypeName: StartButton, Assembly-CSharp
-        m_MethodName: GameplaySceneChange
+        m_MethodName: MenuToUserSceneChange
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

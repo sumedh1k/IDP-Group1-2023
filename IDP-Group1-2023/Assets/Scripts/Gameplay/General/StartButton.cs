@@ -17,9 +17,17 @@ public class StartButton : MonoBehaviour
 
     }
 
-    public void GameplaySceneChange()
+    public void MenuToUserSceneChange()
     {
         SceneManager.LoadScene("Story");
+    }
+    public void UserToStorySceneChange()
+    {
+        SceneManager.LoadScene("Story");
+    }
+    public void StoryToGamePlay()
+    {
+        SceneManager.LoadScene("Gameplay");
     }
     public void LeaderboardSceneChange()
     {

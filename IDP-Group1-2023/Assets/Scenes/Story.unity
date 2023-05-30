@@ -689,7 +689,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1347427620
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -873,8 +873,10 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 1465463423}
+  selectedCommands:
+  - {fileID: 1465463424}
   variables: []
   description: 
   stepPause: 0
@@ -1197,7 +1199,7 @@ MonoBehaviour:
   itemId: 13
   indentLevel: 0
   storyText: Nobody had expected the dollhouse to be the reason these people were
-    missing, so no one had ever caught on to the curse except for Daisy's ever vigilant
+    missing, so no one had ever caught on to the curse except for Daisy's viligant
     aunt.
   description: 
   character: {fileID: 2032196300}
