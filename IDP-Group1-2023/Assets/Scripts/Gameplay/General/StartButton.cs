@@ -37,5 +37,9 @@ public class StartButton : MonoBehaviour
     {
         SceneManager.LoadScene("Controls");
     }
+    public void LeaderboardToMainSceneChange()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
 }
 
