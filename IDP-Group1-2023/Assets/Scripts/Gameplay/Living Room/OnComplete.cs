@@ -12,6 +12,8 @@ public class OnComplete : MonoBehaviour
     public void takeTime()
     {
         //realTime = float.Parse(Timer.text);
-        PlayerPrefs.SetFloat("Room1Time", PlayerPrefs.GetFloat("Time", 100));
+        float timeValue = PlayerPrefs.GetFloat("Time", 100);
+        float subtractedValue = 1800 - timeValue;
+        PlayerPrefs.SetFloat("Room1Time", subtractedValue);
     }
 }

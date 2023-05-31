@@ -48,6 +48,7 @@ using System.Linq;
 
 public class Survey : MonoBehaviour
 {
+    [SerializeField] InputField Username;
     [SerializeField] InputField feedback1;
     [SerializeField] InputField feedback2;
     [SerializeField] ToggleGroup toggleGroup3;
@@ -60,7 +61,7 @@ public class Survey : MonoBehaviour
     {
         int value3 = GetToggleGroupValue(toggleGroup3);
         int value4 = GetToggleGroupValue(toggleGroup4);
-        StartCoroutine(Post(feedback1.text, feedback2.text, value3, value4, feedback5.text));
+        StartCoroutine(Post(Username.text, feedback1.text, feedback2.text, value3, value4, feedback5.text));
     }
 
     int GetToggleGroupValue(ToggleGroup toggleGroup)
@@ -74,9 +75,10 @@ public class Survey : MonoBehaviour
         return 0;
     }
 
-    IEnumerator Post(string s1, string s2, int num1, int num2, string s3)
+    IEnumerator Post(string u, string s1, string s2, int num1, int num2, string s3)
     {
         WWWForm form = new WWWForm();
+        form.AddField("entry.995369196", u); //username
         form.AddField("entry.1438025189", s1); //Q1
         form.AddField("entry.303991439", s2); //Q2
         form.AddField("entry.169532271", num1.ToString()); //Q3
