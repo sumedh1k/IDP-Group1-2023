@@ -1,10 +1,12 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class TimerScript : MonoBehaviour
 {
     public Text timerText;
     private float countdownTime = 30 * 60; // 30 minutes in seconds
+    
 
     private void Start()
     {
@@ -18,6 +20,13 @@ public class TimerScript : MonoBehaviour
             countdownTime -= Time.deltaTime;
             PlayerPrefs.SetFloat("Time", countdownTime);
             UpdateTimerText();
+        }
+        else
+        {
+            Debug.Log("Time Limit Reached: You Lost.");
+            countdownTime = 0;
+            SceneManager.LoadScene("GameOver");
+
         }
     }
 
