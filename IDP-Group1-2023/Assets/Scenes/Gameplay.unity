@@ -846,7 +846,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 59.961193
     y: 66.93452
-    width: 77.988335
+    width: 81.098145
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -936,7 +936,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 86191490}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 86191541}
   variables:
   - {fileID: 86191522}
   - {fileID: 86191554}
@@ -1132,8 +1133,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 12
   indentLevel: 1
-  storyText: 'The order you need to hit on the panel is red, blue, green, blue, green,
-    yellow. That is the order of the colors of animals in the picture book.  (-200
+  storyText: 'The order you need to hit on the panel is red, blue, green, green,
+    blue. That is the order of the colors of animals in the picture book.  (-200
     seconds)
 
 '
@@ -2714,7 +2715,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 161.0366
     y: 68.38818
-    width: 133.965
+    width: 143.29445
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2778,7 +2779,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 326.43744
     y: 66.629364
-    width: 99.757034
+    width: 104.42176
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -12630,7 +12631,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 0}
+  selectedFlowchart: {fileID: 86191491}
 --- !u!4 &725340763
 Transform:
   m_ObjectHideFlags: 1

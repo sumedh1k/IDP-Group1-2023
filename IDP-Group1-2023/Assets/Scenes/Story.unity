@@ -842,6 +842,8 @@ GameObject:
   - component: {fileID: 1465463426}
   - component: {fileID: 1465463424}
   - component: {fileID: 1465463425}
+  - component: {fileID: 1465463430}
+  - component: {fileID: 1465463429}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -874,9 +876,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1465463423}
+  - {fileID: 1465463394}
   selectedCommands:
-  - {fileID: 1465463424}
+  - {fileID: 1465463419}
   variables: []
   description: 
   stepPause: 0
@@ -902,9 +904,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 19
-    y: 79
-    width: 138
+    x: 30
+    y: 70
+    width: 136
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -928,6 +930,8 @@ MonoBehaviour:
   - {fileID: 1465463401}
   - {fileID: 1465463412}
   - {fileID: 1465463411}
+  - {fileID: 1465463430}
+  - {fileID: 1465463429}
   - {fileID: 1465463410}
   - {fileID: 1465463418}
   - {fileID: 1465463417}
@@ -1336,9 +1340,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 16
   indentLevel: 0
-  storyText: As Daisy's family and her grieved over the tragic event, an idea came
-    to Daisy's mom. Unknowing about the curse, she decided to give the dollhouse
-    to Daisy as a way to keep the memory of her aunt alive.
+  storyText: 'As Daisy''s family and her grieved over the tragic event, an idea came
+    to Daisy''s mom. '
   description: 
   character: {fileID: 2032196300}
   portrait: {fileID: 0}
@@ -1601,7 +1604,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 479.7857
     y: 80.551285
-    width: 139.6
+    width: 138
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1713,6 +1716,52 @@ MonoBehaviour:
     booleanRef: {fileID: 0}
     booleanVal: 1
   targetGameObjectOLD: {fileID: 0}
+--- !u!114 &1465463429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465463392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 35
+  indentLevel: 0
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 0.5
+  durationOLD: 0
+--- !u!114 &1465463430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465463392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 34
+  indentLevel: 0
+  storyText: Not knowing about the curse, she decided to give the dollhouse to Daisy
+    as a way to keep the memory of her aunt alive.
+  description: 
+  character: {fileID: 2032196300}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!1 &1579678883
 GameObject:
   m_ObjectHideFlags: 0
